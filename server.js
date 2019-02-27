@@ -4,9 +4,9 @@ const port =  process.env.PORT || 3000;
 
 var app = express();
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs');
