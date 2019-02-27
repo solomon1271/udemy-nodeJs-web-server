@@ -32,8 +32,10 @@ app.get('/about', (req, res) => {
     });
 });
 
-app.get('/bad', (req, res) => {
-    res.send('This is a bad request.');
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs',{
+        pageTitle:'Projects'
+    });
 });
 
 app.listen(port, ()=>{
